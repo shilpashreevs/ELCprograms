@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Revarry {
+public class revarray {
     public static int[] reverse(int[] ar)
     {
         for(int i=0;i<ar.length/2;i++)
