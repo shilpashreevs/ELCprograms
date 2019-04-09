@@ -1,7 +1,8 @@
 
 import java.util.*; 
   
- public class TreeSetDemo { 
+ public class closestsmallerint
+ { 
     public static void closestSmaller(int[] arr) 
     { 
       
@@ -16,8 +17,8 @@ import java.util.*;
                 System.out.print(-1 + " "); 
             else
                 System.out.print(smaller + " "); 
-        } 
-    } 
+       } 
+   } 
   
     public static void main(String[] args) 
     { 
