@@ -1,4 +1,4 @@
-public class find 
+public class sumpair
 { 
     public static void main(String args[]) 
     { 
@@ -8,7 +8,7 @@ public class find
     } 
   
     public static void getPairsCount(int[] arr, int sum) 
-    { 
+       { 
   
         int count = 0;
        
@@ -18,5 +18,5 @@ public class find
                     count++; 
   
         System.out.printf("Count of pairs is %d",count); 
-    } 
+       } 
 } 
