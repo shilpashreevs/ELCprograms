@@ -1,4 +1,4 @@
-public class SortingArray
+public class stringprogram
 {
     public static void main(String []args)
     {
