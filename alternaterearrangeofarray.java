@@ -1,6 +1,6 @@
 import java.util.* ; 
   
- public class GFG 
+ public class alternaterearrangeofarray
 { 
   
    public  static void AlternateRearrange(int arr[], int n)  
