@@ -1,5 +1,6 @@
 import java.util.Arrays; 
-public class duplicatenuminarray {
+public class duplicatenuminarray 
+{
   public static void main(String[] args) 
     {
         int[] my_array = {1, 2, 5, 5, 6, 6, 7, 2};
@@ -15,4 +16,4 @@ public class duplicatenuminarray {
             }
         }
     }    
-}
+ }
