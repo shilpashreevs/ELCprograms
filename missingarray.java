@@ -1,6 +1,6 @@
 public class missingarray
 {
-    static int ar[]={10,20,30,40,50,60,70,80,90,100}; //given array
+    static int ar[]={10,20,30,40,50,60,70,80,90,100};
     
     public static void main(String[] args) 
     {
@@ -12,7 +12,7 @@ public class missingarray
     {
        System.out.print("given array(already sorted): ");
            for (int j = 0; j < ar.length; j++)
-       System.out.print(ar[j] +" "); // display 
+       System.out.print(ar[j] +" "); 
            
            System.out.print("\nNumbers missing between 1 to 100 in array :  ");
            
