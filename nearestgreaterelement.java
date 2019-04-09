@@ -1,4 +1,4 @@
- public class Main 
+ public class nearestgreaterelement
 {  
   
  public static void printNGE(int arr[], int n) 
