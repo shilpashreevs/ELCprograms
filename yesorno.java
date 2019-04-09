@@ -1,24 +1,20 @@
- public class GFG  
+ public class yesorno
 { 
   
    
-    static boolean EqualNumbers(int a[], int n) 
-    { 
+  static boolean EqualNumbers(int a[], int n) 
+  { 
         for (int i = 0; i < n; i++)  
-        { 
-  
-            
-            while (a[i] % 2 == 0)  
-            { 
+         { 
+          while (a[i] % 2 == 0)  
+              { 
                 a[i] /= 2; 
-            } 
-  
-           
-            while (a[i] % 3 == 0) 
+              } 
+           while (a[i] % 3 == 0) 
             { 
                 a[i] /= 3; 
-            } 
-        } 
+         } 
+    } 
   
         // Remaining numbers  
         for (int i = 1; i < n; i++)  
