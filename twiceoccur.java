@@ -1,4 +1,4 @@
- public class RepeatElement 
+ public class twiceoccur
 { 
     void printRepeating(int arr[], int size)  
     { 
