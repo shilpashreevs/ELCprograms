@@ -1,7 +1,5 @@
  public class yesorno
 { 
-  
-   
   static boolean EqualNumbers(int a[], int n) 
   { 
         for (int i = 0; i < n; i++)  
@@ -15,8 +13,7 @@
                 a[i] /= 3; 
          } 
     } 
-  
-        // Remaining numbers  
+  // Remaining numbers  
         for (int i = 1; i < n; i++)  
         { 
             if (a[i] != a[0]) 
@@ -27,9 +24,7 @@
   
         return true; 
     } 
-  
-   
-    public static void main(String[] args)  
+   public static void main(String[] args)  
     { 
         int a[] = {50, 75, 100}; 
   
