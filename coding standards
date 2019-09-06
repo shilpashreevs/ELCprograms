@@ -1,0 +1,116 @@
+general
+·         Make sure ALL GIT commits include the associated JIRA ticket number
+
+·         Make sure the Jira ticket has the name of the branch that's getting reviewed
+
+·         Make sure the PR is linked back to the Jira ticket
+
+·         Confirm it passes linting / Reject it if it doesn't -  [ link ]
+
+·         JavaScript
+
+·         SCSS
+
+·         PHP  -  [ link ]
+
+·         Branch should pass global `gulp qa-js-diff` command (checks diffs in branch for JS linting errors)
+
+·         Ensure none of the updated files contain DOS line endings
+
+javascript
+·         DO NOT use the eval() function EVER!
+
+·         .scroll() and .resize() functions should always be debounced/throttled
+
+·         Do not repeatedly query for the same element; do it once and store it in a variable.
+
+·         Do not embed event handlers within each other. For example: do not put a window.load event inside a document.ready
+
+·         JS event handlers should bind to elements with "js-" prefixed classes
+
+·         Anticipate hoisting [ link ]
+
+·         avoid recasting of datatypes - e.g. var obj = '';  and then later... obj = {foo:bar}; is not acceptable.
+
+·         variable names should be consistent - use $ in front of all variables names that are jQuery selectors
+
+·         reject highly complex conditionals. suggest either breaking out into functions or use an an object lookup if appropriate
+
+·         nested loops are bad, there is usually a better way
+
+·         Avoid global variables as much as possible, try to always ensure code is encapsulated (IIFE, Class) with global references passed as parameters.
+
+scss/css
+·         There should be no selectors with the "js-" prefix in any scss file
+
+·         All media query breakpoints should use global variables
+
+·         All fonts and colors should use global variables
+
+·         Use unitless line-height values. 
+
+·         Ensure that RTL support is included (not applicable for all brands)
+
+·         when setting shorthand horizontal margin or padding please use the swap_direction mixin (if the left/right values differ)
+
+·         ex:
+
+·         Write styles "mobile first"
+
+·         avoid usage of @extend
+
+·         do NOT introduce new (we hope to deprecate due to widespread improper usage). 
+
+·         If @extend is used, NEVER extend classes directly as   @extend .foo   – only silent classes are ever permitted as   @extend %foo
+
+Accessibility
+·         All images should have an "alt" tag specified, even if it is blank
+
+·         Refer to and follow best practices laid out in the ELC Accessibility Technical Playbook
+
+new templates
+This should be a first pass for peer review.
+
+·         Templates should be properly named [ link ]
+
+·         Label: {Descriptor} - {Device if PC/mobile specific} - {version}
+
+·         Machine Name: {descriptor}{device if pc/mobile specific}{version}
+
+·         CSS/SASS naming should adhere to BEM standards [ link ]
+
+·         Class names only have 1 element, therefore only 1 "__" per class
+
+·         Folder structure should follow conventions per brand (templates & css)
+
+·         Mustache syntax must be properly used [ link ]
+
+·         Double braces : Escaped variables
+
+·         Triple braces : Unescaped HTML content
+
+·         Elements that don’t have a value should usually not be shown on the page
+
+·         More examples at Coding Requirements for Front End Developers: Live Document#Mustache
+
+·         All images must be lazy loaded [ link ]
+
+·         JS classes should be included in the template folder and named for the template (ie. fancyTemplate.js)
+
+·         All libraries should be properly defined / attached
+
+·         Ensure proper usage of Drupal behaviors / jQuery events (no outside methods)
+
+·         attach method should pass 'context' parameter
+
+·         all jQuery selectors should filter by template context
+
+·         No t() functions (deprecated)
+
+·         No free text class / id fields; all of the possible options should be added to a select list
+
+·         Use url_v2 or link_v2 fields for URLs or links, respectively. Do not use string fields. 
+
+·         Templates should not use the input types flagged as "Not Recommended" in the Template Input Definition Library and in the list below:
+
+ 
