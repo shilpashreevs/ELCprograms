@@ -1,0 +1,58 @@
+/**
+ * @file global/_media-queries.scss
+ */
+
+$screen: "only screen" !default;
+
+// Not used below, but handy as we customize later
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+// Small
+$small-up: $screen !default;
+$small-down: max-width 767 !default;
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})" !default;
+
+// Medium
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})" !default;
+$medium-down: max-width 1024 !default;
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})" !default;
+
+// Large
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})" !default;
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})" !default;
+$xlarge-only: "#{$screen} and (max-width: #{upper-bound($xlarge-range)})" !default;
+$xlarge-up: "#{$screen} and (min-width:#{upper-bound($xlarge-range)})" !default;
+$xlargexxl-up: "#{$screen} and (min-width:#{lower-bound($xlargexxl-range)})" !default;
+
+$tablet-portrait: "#{$portrait} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})" !default;
+
+// Mobile
+$tablet-down: max-width 768 !default;
+$iphone-4-only: "#{$screen} and (min-device-width: 320px) and (max-device-width: 480px)" !default;
+$iphone-5-only: "#{$screen} and (min-device-width: 320px) and (max-device-width: 568px)" !default;
+$iphone-4-portrait: "#{$screen} and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait)" !default;
+$iphone-4-landscape: "#{$screen} and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait)" !default;
+$iphone-5-portrait: "#{$screen} and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape)" !default;
+$iphone-5-landscape: "#{$screen} and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape)" !default;
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+// 2019 Redesign - new breakpoints - WIP
+// Keeping simpler for now - @todo finalize
+// clinique has a pc-first (ouch) mixin for breakpoint
+// see _variables.scss for width vars
+// @todo these will need to change before launch
+// XX-Small (380)  0 – 379
+// X-Small (540) 0 – 539
+// Small (768) 540 - 799
+// Medium (1024) 800 – 1039
+// Large (1304) 1040 – 1559
+// X-Large (1796) 1560+
+$cr19-xxsmall-up: "#{$screen} and (min-width: #{$cr19-xxsmall})";
+$cr19-xsmall-up: "#{$screen} and (min-width: #{$cr19-xsmall})";
+$cr19-small-up: "#{$screen} and (min-width: #{$cr19-small})";
+$cr19-medium-up: "#{$screen} and (min-width: #{$cr19-medium})";
+$cr19-large-up: "#{$screen} and (min-width: #{$cr19-large})"; // primary switch from mobile
+$cr19-xlarge-up: "#{$screen} and (min-width: #{$cr19-xlarge})";
+~
