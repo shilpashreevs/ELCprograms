@@ -1,0 +1,107 @@
+----------------------1----------------------
+$i = 1;
+for (1 .. 10) {
+    print "Enter Username $i: ";
+    $i = $i + 1;
+    my $username = <STDIN>;
+    chomp $username;
+    
+    push @arr, $username;
+}
+print "\n\nAll Usernames are:  ";
+print "@arr\n";
+----------------------1------------------------
+
+----------------------2------------------------
+
+$i = 1;
+@arr;
+for (1 .. 1) {
+    print "Enter Username $i: ";
+    $i = $i + 1;
+    my $username = <STDIN>;
+    chomp $username;
+    
+    push @arr, $username;
+}
+
+
+
+for (1 .. 1) {
+    print "Enter newusername: ";
+   
+    my $newusername = <STDIN>;
+    
+     for( $a = 0; $a < 1; $a = $a + 1 ) {
+        if( "@arr[$a]" eq "$newusername" ) {
+            print "@arr[$a]\n";
+            print "$newusername\n";
+            printf "Username Already Exits\n";
+           
+        } else { 
+           
+            push @arr, $newusername;
+            printf "\nUnique Username, Added to Array\n\n";
+        }
+    }
+    
+}
+
+print "\nNew Array: "."@arr\n";
+#NOT_COMPLETED
+------------------2------------------------
+
+------------3--------------------------------
+my @arr = ("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten");
+@arr2 = splice(@arr, 3, 7);
+print "Final List: ";
+print "@arr \n";
+
+print "Deleted Error Codes: ";
+print "@arr2";
+-------------3--------------------------------
+
+------------------4------------------------
+print "Enter Your First Name: ";
+
+$firstName = <STDIN>;
+chomp $firstName;
+
+print "Enter Your Last Name: ";
+
+$lastName = <STDIN>;
+chomp $lastName;
+
+$email = $firstName.".".$lastName."\@csscorp.com";
+print "Your email address is: ";
+print "$email";
+------------------4-------------------------
+
+-----------5-----------------
+my @arr = ("one", "two", "three", "four", "five", "six", "seven", "eight", "nine");
+
+$num = scalar @arr;
+$num = int($num/2)-1;
+@arr2 = splice(@arr, $num, 3);
+print "@arr";
+------------5-------------------------------
+
+------------------------6-------------------
+@username =("TonightGamer", "BadCaptain", "BadChatty", "CrazyAnyone", "FarRacer", "JadeBad");
+
+print "List of All Usernames:  @username\n";
+
+sub usernameList{
+    @newarr = grep {$_,length($_)>8}@username;
+    
+    if (@newarr > 0){
+        return "@newarr"; 
+    }
+    else{
+        return "No Username Available";
+    }
+}
+
+ @userNew = usernameList(@username);
+ print "Username having more than eight characters are : @userNew"; 
+------------------------6--------------------
